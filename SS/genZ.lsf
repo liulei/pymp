@@ -1,0 +1,30 @@
+#!/bin/sh
+
+#BSUB -J gen_Z
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+dir_name=SS-hd-2s1
+base_name=dwarf
+nproc=16
+tmax=1500
+
+#./showM0M.py $dir_name $base_name $nproc 0015 > log.out
+#massp.py $dir_name $tmax
+#SFR.py $dir_name $tmax
+#./mtrans.py $dir_name $tmax
+#./showFBHist.py $dir_name $nproc $tmax
+./compFeHistp.py $dir_name $base_name $nproc > log.out
+./compNHistp.py $dir_name $base_name $nproc > log.out
+#./compStarMassHistp.py $dir_name $base_name $nproc > log.out
+#./compStarSurfaceDenp.py $dir_name $base_name $nproc 4.0 > log.out
+#./fourPanelD.py $dir_name $base_name $nproc 9.0 > log.out
+#./fourPanelT.py $dir_name $base_name $nproc 9.0 > log.out
+
+date

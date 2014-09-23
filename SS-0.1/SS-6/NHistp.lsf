@@ -1,0 +1,16 @@
+#!/bin/sh
+
+#BSUB -J compNHistp
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+./compNHistp.py SS-5E7-iso-6 dwarf 16 > log.out.NH
+#./compFeHistp.py SS-5E7-iso-4 dwarf 16 > log.out.FeH
+
+date

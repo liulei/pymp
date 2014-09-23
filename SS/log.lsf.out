@@ -1,0 +1,115 @@
+Sender: LSF System <lsfadmin@c1106>
+Subject: Job 32875: <gen_SS> Done
+
+Job <gen_SS> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1106>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Thu May 16 21:57:48 2013
+Results reported at Thu May 16 22:48:28 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J gen_SS
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+dir_name=SS-hd-2s1
+base_name=dwarf
+nproc=16
+tmax=1500
+
+./showM0M.py $dir_name $base_name $nproc 0015 > log.out
+massp.py $dir_name $tmax
+SFR.py $dir_name $tmax
+./mtrans.py $dir_name $tmax
+./showFBHist.py $dir_name $nproc $tmax
+./compFeHistp.py $dir_name $base_name $nproc > log.out
+./compNHistp.py $dir_name $base_name $nproc > log.out
+./compStarMassHistp.py $dir_name $base_name $nproc > log.out
+./compStarSurfaceDenp.py $dir_name $base_name $nproc 4.0 > log.out
+#./fourPanelD.py $dir_name $base_name $nproc 9.0 > log.out
+#./fourPanelT.py $dir_name $base_name $nproc 9.0 > log.out
+
+date
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   3026.86 sec.
+    Max Memory :      2158 MB
+    Max Swap   :      2554 MB
+
+    Max Processes  :         7
+    Max Threads    :         8
+
+The output (if any) follows:
+
+Thu May 16 21:57:48 CST 2013
+Hello from Lei's Python script!
+15939 10
+[   10.05    30.05    50.05    70.05    90.05   110.05   130.05   150.05
+   170.05   190.05   210.05   230.05   250.05   270.05   290.05   310.05
+   330.05   350.05   370.05   390.05   410.05   430.05   450.05   470.05
+   490.05   510.05   530.05   550.05   570.05   590.05   610.05   630.05
+   650.05   670.05   690.05   710.05   730.05   750.05   770.05   790.05
+   810.05   830.05   850.05   870.05   890.05   910.05   930.05   950.05
+   970.05   990.05  1010.05  1030.05  1050.05  1070.05  1090.05  1110.05
+  1130.05  1150.05  1170.05  1190.05  1210.05  1230.05  1250.05  1270.05
+  1290.05  1310.05  1330.05  1350.05  1370.05  1390.05  1410.05  1430.05
+  1450.05  1470.05  1490.05  1510.05  1530.05  1550.05  1570.05]
+[   214.53995   7169.05715  11113.43225  13259.60975  14201.39885
+  14853.1213   12828.8699   11773.293    12642.0696   12377.00465
+  11233.19815  11412.7272   12098.00795  10121.41685  10372.94015
+  10060.10145   9874.98665   9062.85555   8617.07495   7566.5638
+   8309.9033    8702.6903    7193.79635   6853.73685   6598.293
+   6710.41925   5140.8377    6756.8843    5907.63185   5112.1773
+   3806.5974    4470.58365   3750.9851    4498.7717    3459.0419
+   4051.3522    3327.13025   2551.40355   2967.40535   2543.419
+   2460.33895   1584.3016    1870.36155   1578.4959    1465.1167
+   1758.92525   1045.9547    1467.50975    914.27005    721.19985
+    765.45965    503.61265    454.7396     802.29695    433.27355
+    797.96235    407.6693     407.5735     394.85635    367.5002
+    280.8945     380.64945    366.81445    377.6003     384.18305
+    571.1194     356.0962     235.80245    314.93475    375.5379
+    257.8452     229.74365    405.9463     271.14895    228.4985
+    220.89425    218.92595    247.61565    270.8296 ]
+length of file: 79
+Hello from Lei's Python script!
+15939 10
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_0.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_1.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_2.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_3.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_4.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_5.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_6.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_7.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_8.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_9.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_10.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_11.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_12.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_13.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_14.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-hd-2s1/out/record_fb_15.dat
+Thu May 16 22:48:28 CST 2013
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+#BSUB -J genDT
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+./fourPanelT.py MW-11.1 MW 8 50.0 > log.out
+#./fourPanelD.py MW-11.1 MW 8 50.0 > log.out
+#./fourPanelMc.py MW-11.1 MW 8 50.0 > log.out
+
+date

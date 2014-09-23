@@ -1,0 +1,22 @@
+#!/bin/sh
+
+#BSUB -J gen_vel
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+rad=18.0
+
+date
+
+panelVelHist.py 101-hd-3Hs1 dwarf 0001 8 $rad
+panelVelHist.py 100-hd-3Hs1 dwarf 0001 8 $rad
+panelVelHist.py 91-hd-3Hs1 dwarf 0001 8 $rad
+panelVelHist.py 90-hd-3Hs1 dwarf 0001 8 $rad
+panelVelHist.py 81-hd-3Hs1 dwarf 0001 2 $rad
+panelVelHist.py 80-hd-3Hs1 dwarf 0001 2 $rad
+
+date

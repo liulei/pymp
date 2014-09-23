@@ -1,0 +1,68 @@
+Sender: LSF System <lsfadmin@c0407>
+Subject: Job 24355: <gen.-6> Done
+
+Job <gen.-6> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c0407>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-6/out/SS> was used as the working directory.
+Started at Thu Dec 20 15:49:28 2012
+Results reported at Thu Dec 20 16:02:41 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J gen.-6
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+dir_name=SS-5E7-iso-6
+base_name=dwarf
+nproc=16
+tmax=3000
+
+#massp.py $dir_name $tmax
+#SFR.py $dir_name $tmax
+#./mtrans.py $dir_name 3000.0
+#./showFBHist.py $dir_name $nproc $tmax
+#./compNHistp.py $dir_name $base_name $nproc > log.out
+#./compFeHistp.py $dir_name $base_name $nproc > log.out
+./compStarMassHistp.py $dir_name $base_name $nproc > log.out
+#./compStarSurfaceDenp.py $dir_name $base_name $nproc 4.0 > log.out
+#./showM0M.py $dir_name $base_name $nproc > log.out
+#./fourPanelD.py $dir_name $base_name $nproc 9.0 > log.out
+#./fourPanelT.py $dir_name $base_name $nproc 9.0 > log.out
+
+date
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    792.06 sec.
+    Max Memory :      2213 MB
+    Max Swap   :      2605 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Thu Dec 20 15:49:28 CST 2012
+Thu Dec 20 16:02:41 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+

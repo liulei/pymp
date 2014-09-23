@@ -1,0 +1,33 @@
+#!/bin/sh
+
+#BSUB -J gen2
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+#./DPanel.py 10 25.0 > log.out
+#./McPanel.py 10 12.5 > log.out
+#./histPanel.py 10 > log.out
+
+#./DPanel.py 50 25.0 > log.out
+#./McPanel.py 50 12.5 > log.out
+#./histPanel.py 50 > log.out
+
+#./DPanel.py 100 25.0 > log.out
+#./McPanel.py 100 12.5 > log.out
+#./histPanel.py 100 > log.out
+
+#./DPanel.py 150 25.0 > log.out
+#./McPanel.py 150 12.5 > log.out
+#./histPanel.py 150 > log.out
+
+./DPanel.py 200 25.0 > log.out
+./McPanel.py 200 12.5 > log.out
+./histPanel.py 200 > log.out
+
+date

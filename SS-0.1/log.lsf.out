@@ -1,0 +1,803 @@
+Sender: LSF System <lsfadmin@c1104>
+Subject: Job 24254: <compNHistp> Done
+
+Job <compNHistp> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1104>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Wed Dec 19 10:44:05 2012
+Results reported at Wed Dec 19 10:50:38 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J compNHistp
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+./compNHistp.py SS-5E7-iso-6 dwarf 16 > log.out.NH
+./compFeHistp.py SS-5E7-iso-6 dwarf 16 > log.out.FeH
+
+date
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    387.71 sec.
+    Max Memory :      1555 MB
+    Max Swap   :      1943 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Wed Dec 19 10:44:05 CST 2012
+Wed Dec 19 10:50:38 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@c1104>
+Subject: Job 24260: <compNHistp> Done
+
+Job <compNHistp> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1104>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Wed Dec 19 10:59:41 2012
+Results reported at Wed Dec 19 11:04:47 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J compNHistp
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+./compNHistp.py SS-5E7-iso-4 dwarf 16 > log.out.NH
+./compFeHistp.py SS-5E7-iso-4 dwarf 16 > log.out.FeH
+
+date
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    299.53 sec.
+    Max Memory :      1411 MB
+    Max Swap   :      1817 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Wed Dec 19 10:59:41 CST 2012
+Wed Dec 19 11:04:47 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@c1104>
+Subject: Job 24265: <compNHistp> Exited
+
+Job <compNHistp> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1104>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Wed Dec 19 11:13:59 2012
+Results reported at Wed Dec 19 11:16:50 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J compNHistp
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+./compNHistp.py SS-5E7-iso-4 dwarf 16 > log.out.NH
+./compFeHistp.py SS-5E7-iso-4 dwarf 16 > log.out.FeH
+
+date
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with signal termination: Alarm clock.
+
+Resource usage summary:
+
+    CPU time   :    168.81 sec.
+    Max Memory :       840 MB
+    Max Swap   :      1228 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Wed Dec 19 11:13:59 CST 2012
+Wed Dec 19 11:16:50 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@c1106>
+Subject: Job 24262: <genDT.SS> Exited
+
+Job <genDT.SS> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1106>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Wed Dec 19 11:00:42 2012
+Results reported at Wed Dec 19 11:19:07 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J genDT.SS
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+./fourPanelT.py SS-5E7-iso-4 dwarf 16 9.0 > log.out
+./fourPanelT.py SS-5E7-iso-6 dwarf 16 9.0 > log.out
+
+date
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with signal termination: Alarm clock.
+
+Resource usage summary:
+
+    CPU time   :   1092.95 sec.
+    Max Memory :      1174 MB
+    Max Swap   :      1564 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Wed Dec 19 11:00:42 CST 2012
+Wed Dec 19 11:19:07 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@c1104>
+Subject: Job 24266: <compNHistp> Done
+
+Job <compNHistp> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1104>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Wed Dec 19 11:17:14 2012
+Results reported at Wed Dec 19 11:32:06 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J compNHistp
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+./compNHistp.py SS-5E7-iso-4 dwarf 16 > log.out.NH
+./compFeHistp.py SS-5E7-iso-4 dwarf 16 > log.out.FeH
+
+date
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    879.50 sec.
+    Max Memory :      1538 MB
+    Max Swap   :      1926 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Wed Dec 19 11:17:14 CST 2012
+Wed Dec 19 11:32:06 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@c1107>
+Subject: Job 24269: <compNHistp> Done
+
+Job <compNHistp> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1107>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Wed Dec 19 11:36:17 2012
+Results reported at Wed Dec 19 11:50:37 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J compNHistp
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+./compNHistp.py SS-5E7-iso-4 dwarf 16 > log.out.NH
+./compFeHistp.py SS-5E7-iso-4 dwarf 16 > log.out.FeH
+
+date
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    851.19 sec.
+    Max Memory :      1524 MB
+    Max Swap   :      1926 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Wed Dec 19 11:36:18 CST 2012
+Wed Dec 19 11:50:37 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@c1106>
+Subject: Job 24268: <genDT.SS> Done
+
+Job <genDT.SS> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1106>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Wed Dec 19 11:23:27 2012
+Results reported at Wed Dec 19 11:56:31 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J genDT.SS
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+./fourPanelT.py SS-5E7-iso-4 dwarf 16 9.0 > log.out
+./fourPanelT.py SS-5E7-iso-6 dwarf 16 9.0 > log.out
+
+date
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1960.58 sec.
+    Max Memory :      1553 MB
+    Max Swap   :      1943 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Wed Dec 19 11:23:27 CST 2012
+Wed Dec 19 11:56:31 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@c1107>
+Subject: Job 24272: <compNHistp> Done
+
+Job <compNHistp> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1107>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Wed Dec 19 11:51:55 2012
+Results reported at Wed Dec 19 12:01:43 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J compNHistp
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+./compNHistp.py SS-5E7-iso-4 dwarf 16 > log.out.NH
+#./compFeHistp.py SS-5E7-iso-4 dwarf 16 > log.out.FeH
+
+date
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    586.05 sec.
+    Max Memory :      1498 MB
+    Max Swap   :      1886 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Wed Dec 19 11:51:55 CST 2012
+Wed Dec 19 12:01:43 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@c1106>
+Subject: Job 24345: <gen.-4> Done
+
+Job <gen.-4> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1106>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Thu Dec 20 11:31:27 2012
+Results reported at Thu Dec 20 12:31:12 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J gen.-4
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+dir_name=SS-5E7-iso-4
+base_name=dwarf
+nproc=16
+tmax=3000
+
+massp.py $dir_name $tmax
+SFR.py $dir_name $tmax
+./mtrans.py $dir_name 1000.0
+./showFBHist.py $dir_name $nproc $tmax
+./compNHistp.py $dir_name $base_name $nproc > log.out
+./compFeHistp.py $dir_name $base_name $nproc > log.out
+./compStarMassHistp.py $dir_name $base_name $nproc > log.out
+./compStarSurfaceDenp.py $dir_name $base_name $nproc 4.0 > log.out
+./showM0M.py $dir_name $base_name $nproc > log.out
+./fourPanelD.py $dir_name $base_name $nproc 9.0 > log.out
+./fourPanelT.py $dir_name $base_name $nproc 9.0 > log.out
+
+date
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   3567.00 sec.
+    Max Memory :      1509 MB
+    Max Swap   :      1905 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Thu Dec 20 11:31:28 CST 2012
+Hello from Lei's Python script!
+3000 10
+[   10.5    30.5    50.5    70.5    90.5   110.5   130.5   150.5   170.5
+   190.5   210.5   230.5   250.5   270.5   290.5   310.5   330.5   350.5
+   370.5   390.5   410.5   430.5   450.5   470.5   490.5   510.5   530.5
+   550.5   570.5   590.5   610.5   630.5   650.5   670.5   690.5   710.5
+   730.5   750.5   770.5   790.5   810.5   830.5   850.5   870.5   890.5
+   910.5   930.5   950.5   970.5   990.5  1010.5  1030.5  1050.5  1070.5
+  1090.5  1110.5  1130.5  1150.5  1170.5  1190.5  1210.5  1230.5  1250.5
+  1270.5  1290.5  1310.5  1330.5  1350.5  1370.5  1390.5  1410.5  1430.5
+  1450.5  1470.5  1490.5  1510.5  1530.5  1550.5  1570.5  1590.5  1610.5
+  1630.5  1650.5  1670.5  1690.5  1710.5  1730.5  1750.5  1770.5  1790.5
+  1810.5  1830.5  1850.5  1870.5  1890.5  1910.5  1930.5  1950.5  1970.5
+  1990.5  2010.5  2030.5  2050.5  2070.5  2090.5  2110.5  2130.5  2150.5
+  2170.5  2190.5  2210.5  2230.5  2250.5  2270.5  2290.5  2310.5  2330.5
+  2350.5  2370.5  2390.5  2410.5  2430.5  2450.5  2470.5  2490.5  2510.5
+  2530.5  2550.5  2570.5  2590.5  2610.5  2630.5  2650.5  2670.5  2690.5
+  2710.5  2730.5  2750.5  2770.5  2790.5  2810.5  2830.5  2850.5  2870.5
+  2890.5  2910.5  2930.5  2950.5  2970.5  2990.5]
+[   994.5505    5007.52      7940.47      9379.91     10956.39     13420.8
+  12275.55     11403.335    10774.265    11959.965    14600.25     11187.23
+   8666.12      7974.46     12105.29      5933.44      7459.49     10002.89
+   6758.56      6333.425     3871.99      6996.05      5026.711     2859.278
+   3221.876     3403.0225    3634.339     3059.6915    2381.5765
+   2038.3235    1178.9275    1585.267     1574.1433    2505.1905    1271.3
+   1483.14705    351.665      853.212      850.8242     232.4695
+    233.3207     227.68755    207.93245    172.5828     219.6223
+    171.3911     154.6057     126.5314     117.6109     129.43385
+    156.2695      80.2969     112.8939     135.69435    154.1225
+    116.2517     133.10535    113.38195    112.14255    109.71425
+    100.821      127.6342     114.0392      97.8931      89.30675
+     88.7357      91.22835     99.28675     96.8749     119.6768
+    116.87825    122.84795     89.31895    114.7        103.38335
+    123.16495    146.0433     129.2154     118.12965    122.002
+    120.07815    138.7271      91.2665      86.3342      66.50925
+     90.9622      97.98675    111.64855    102.26305    124.37725
+    106.2323     131.1747     109.7354     120.4142      91.4549
+    108.89965    122.41135    120.2839     121.7194      96.4192
+    114.56155     77.66175     92.6253      90.74565    109.28365
+    100.37695     90.70635    104.82275    117.2512     120.2038     114.402
+     94.89385    106.5678      89.79015    109.991      141.3323
+    102.7597     104.1295      96.1177      99.1054     119.95045
+    103.78465    123.97285     89.5495     102.0453     108.97605
+     99.29245     87.7852     126.12605     97.1654     114.01585
+    127.15185    146.62605     89.9362     124.91485    149.36485
+    137.59735    116.0407     108.2814     151.90755     91.52485
+    126.18825    159.9718     110.5008     129.1719     136.7656
+    149.42365    114.73985    129.0225     137.11035]
+length of file: 150
+Hello from Lei's Python script!
+3000 10
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_0.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_1.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_2.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_3.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_4.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_5.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_6.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_7.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_8.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_9.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_10.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_11.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_12.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_13.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_14.dat
+/export/home/liulei/program/mp-cd-sph/run/SS-5E7-iso-4/out/record_fb_15.dat
+Thu Dec 20 12:31:12 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@c1106>
+Subject: Job 24350: <gen.-4> Done
+
+Job <gen.-4> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1106>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Thu Dec 20 13:12:47 2012
+Results reported at Thu Dec 20 13:26:37 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J gen.-4
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+dir_name=SS-5E7-iso-4
+base_name=dwarf
+nproc=16
+tmax=3000
+
+massp.py $dir_name $tmax
+SFR.py $dir_name $tmax
+#./mtrans.py $dir_name 1000.0
+#./showFBHist.py $dir_name $nproc $tmax
+#./compNHistp.py $dir_name $base_name $nproc > log.out
+#./compFeHistp.py $dir_name $base_name $nproc > log.out
+./compStarMassHistp.py $dir_name $base_name $nproc > log.out
+./compStarSurfaceDenp.py $dir_name $base_name $nproc 4.0 > log.out
+#./showM0M.py $dir_name $base_name $nproc > log.out
+#./fourPanelD.py $dir_name $base_name $nproc 9.0 > log.out
+#./fourPanelT.py $dir_name $base_name $nproc 9.0 > log.out
+
+date
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    827.64 sec.
+    Max Memory :      1498 MB
+    Max Swap   :      1899 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Thu Dec 20 13:12:47 CST 2012
+Hello from Lei's Python script!
+3000 10
+[   10.5    30.5    50.5    70.5    90.5   110.5   130.5   150.5   170.5
+   190.5   210.5   230.5   250.5   270.5   290.5   310.5   330.5   350.5
+   370.5   390.5   410.5   430.5   450.5   470.5   490.5   510.5   530.5
+   550.5   570.5   590.5   610.5   630.5   650.5   670.5   690.5   710.5
+   730.5   750.5   770.5   790.5   810.5   830.5   850.5   870.5   890.5
+   910.5   930.5   950.5   970.5   990.5  1010.5  1030.5  1050.5  1070.5
+  1090.5  1110.5  1130.5  1150.5  1170.5  1190.5  1210.5  1230.5  1250.5
+  1270.5  1290.5  1310.5  1330.5  1350.5  1370.5  1390.5  1410.5  1430.5
+  1450.5  1470.5  1490.5  1510.5  1530.5  1550.5  1570.5  1590.5  1610.5
+  1630.5  1650.5  1670.5  1690.5  1710.5  1730.5  1750.5  1770.5  1790.5
+  1810.5  1830.5  1850.5  1870.5  1890.5  1910.5  1930.5  1950.5  1970.5
+  1990.5  2010.5  2030.5  2050.5  2070.5  2090.5  2110.5  2130.5  2150.5
+  2170.5  2190.5  2210.5  2230.5  2250.5  2270.5  2290.5  2310.5  2330.5
+  2350.5  2370.5  2390.5  2410.5  2430.5  2450.5  2470.5  2490.5  2510.5
+  2530.5  2550.5  2570.5  2590.5  2610.5  2630.5  2650.5  2670.5  2690.5
+  2710.5  2730.5  2750.5  2770.5  2790.5  2810.5  2830.5  2850.5  2870.5
+  2890.5  2910.5  2930.5  2950.5  2970.5  2990.5]
+[   994.5505    5007.52      7940.47      9379.91     10956.39     13420.8
+  12275.55     11403.335    10774.265    11959.965    14600.25     11187.23
+   8666.12      7974.46     12105.29      5933.44      7459.49     10002.89
+   6758.56      6333.425     3871.99      6996.05      5026.711     2859.278
+   3221.876     3403.0225    3634.339     3059.6915    2381.5765
+   2038.3235    1178.9275    1585.267     1574.1433    2505.1905    1271.3
+   1483.14705    351.665      853.212      850.8242     232.4695
+    233.3207     227.68755    207.93245    172.5828     219.6223
+    171.3911     154.6057     126.5314     117.6109     129.43385
+    156.2695      80.2969     112.8939     135.69435    154.1225
+    116.2517     133.10535    113.38195    112.14255    109.71425
+    100.821      127.6342     114.0392      97.8931      89.30675
+     88.7357      91.22835     99.28675     96.8749     119.6768
+    116.87825    122.84795     89.31895    114.7        103.38335
+    123.16495    146.0433     129.2154     118.12965    122.002
+    120.07815    138.7271      91.2665      86.3342      66.50925
+     90.9622      97.98675    111.64855    102.26305    124.37725
+    106.2323     131.1747     109.7354     120.4142      91.4549
+    108.89965    122.41135    120.2839     121.7194      96.4192
+    114.56155     77.66175     92.6253      90.74565    109.28365
+    100.37695     90.70635    104.82275    117.2512     120.2038     114.402
+     94.89385    106.5678      89.79015    109.991      141.3323
+    102.7597     104.1295      96.1177      99.1054     119.95045
+    103.78465    123.97285     89.5495     102.0453     108.97605
+     99.29245     87.7852     126.12605     97.1654     114.01585
+    127.15185    146.62605     89.9362     124.91485    149.36485
+    137.59735    116.0407     108.2814     151.90755     91.52485
+    126.18825    159.9718     110.5008     129.1719     136.7656
+    149.42365    114.73985    129.0225     137.11035]
+length of file: 150
+Thu Dec 20 13:26:37 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@c1106>
+Subject: Job 24351: <gen.-4> Done
+
+Job <gen.-4> was submitted from host <laohu.bao.ac.cn> by user <liulei> in cluster <naoc_hpc>.
+Job was executed on host(s) <c1106>, in queue <cpu_test>, as user <liulei> in cluster <naoc_hpc>.
+</export/home/liulei> was used as the home directory.
+</export/home/liulei/program/mp-cd-sph/python/SS> was used as the working directory.
+Started at Thu Dec 20 13:44:42 2012
+Results reported at Thu Dec 20 13:48:56 2012
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -J gen.-4
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+dir_name=SS-5E7-iso-4
+base_name=dwarf
+nproc=16
+tmax=3000
+
+massp.py $dir_name $tmax
+SFR.py $dir_name $tmax
+#./mtrans.py $dir_name 1000.0
+#./showFBHist.py $dir_name $nproc $tmax
+#./compNHistp.py $dir_name $base_name $nproc > log.out
+#./compFeHistp.py $dir_name $base_name $nproc > log.out
+#./compStarMassHistp.py $dir_name $base_name $nproc > log.out
+./compStarSurfaceDenp.py $dir_name $base_name $nproc 4.0 > log.out
+#./showM0M.py $dir_name $base_name $nproc > log.out
+#./fourPanelD.py $dir_name $base_name $nproc 9.0 > log.out
+#./fourPanelT.py $dir_name $base_name $nproc 9.0 > log.out
+
+date
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    253.00 sec.
+    Max Memory :       606 MB
+    Max Swap   :       994 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) follows:
+
+Thu Dec 20 13:44:42 CST 2012
+Hello from Lei's Python script!
+3000 10
+[   10.5    30.5    50.5    70.5    90.5   110.5   130.5   150.5   170.5
+   190.5   210.5   230.5   250.5   270.5   290.5   310.5   330.5   350.5
+   370.5   390.5   410.5   430.5   450.5   470.5   490.5   510.5   530.5
+   550.5   570.5   590.5   610.5   630.5   650.5   670.5   690.5   710.5
+   730.5   750.5   770.5   790.5   810.5   830.5   850.5   870.5   890.5
+   910.5   930.5   950.5   970.5   990.5  1010.5  1030.5  1050.5  1070.5
+  1090.5  1110.5  1130.5  1150.5  1170.5  1190.5  1210.5  1230.5  1250.5
+  1270.5  1290.5  1310.5  1330.5  1350.5  1370.5  1390.5  1410.5  1430.5
+  1450.5  1470.5  1490.5  1510.5  1530.5  1550.5  1570.5  1590.5  1610.5
+  1630.5  1650.5  1670.5  1690.5  1710.5  1730.5  1750.5  1770.5  1790.5
+  1810.5  1830.5  1850.5  1870.5  1890.5  1910.5  1930.5  1950.5  1970.5
+  1990.5  2010.5  2030.5  2050.5  2070.5  2090.5  2110.5  2130.5  2150.5
+  2170.5  2190.5  2210.5  2230.5  2250.5  2270.5  2290.5  2310.5  2330.5
+  2350.5  2370.5  2390.5  2410.5  2430.5  2450.5  2470.5  2490.5  2510.5
+  2530.5  2550.5  2570.5  2590.5  2610.5  2630.5  2650.5  2670.5  2690.5
+  2710.5  2730.5  2750.5  2770.5  2790.5  2810.5  2830.5  2850.5  2870.5
+  2890.5  2910.5  2930.5  2950.5  2970.5  2990.5]
+[   994.5505    5007.52      7940.47      9379.91     10956.39     13420.8
+  12275.55     11403.335    10774.265    11959.965    14600.25     11187.23
+   8666.12      7974.46     12105.29      5933.44      7459.49     10002.89
+   6758.56      6333.425     3871.99      6996.05      5026.711     2859.278
+   3221.876     3403.0225    3634.339     3059.6915    2381.5765
+   2038.3235    1178.9275    1585.267     1574.1433    2505.1905    1271.3
+   1483.14705    351.665      853.212      850.8242     232.4695
+    233.3207     227.68755    207.93245    172.5828     219.6223
+    171.3911     154.6057     126.5314     117.6109     129.43385
+    156.2695      80.2969     112.8939     135.69435    154.1225
+    116.2517     133.10535    113.38195    112.14255    109.71425
+    100.821      127.6342     114.0392      97.8931      89.30675
+     88.7357      91.22835     99.28675     96.8749     119.6768
+    116.87825    122.84795     89.31895    114.7        103.38335
+    123.16495    146.0433     129.2154     118.12965    122.002
+    120.07815    138.7271      91.2665      86.3342      66.50925
+     90.9622      97.98675    111.64855    102.26305    124.37725
+    106.2323     131.1747     109.7354     120.4142      91.4549
+    108.89965    122.41135    120.2839     121.7194      96.4192
+    114.56155     77.66175     92.6253      90.74565    109.28365
+    100.37695     90.70635    104.82275    117.2512     120.2038     114.402
+     94.89385    106.5678      89.79015    109.991      141.3323
+    102.7597     104.1295      96.1177      99.1054     119.95045
+    103.78465    123.97285     89.5495     102.0453     108.97605
+     99.29245     87.7852     126.12605     97.1654     114.01585
+    127.15185    146.62605     89.9362     124.91485    149.36485
+    137.59735    116.0407     108.2814     151.90755     91.52485
+    126.18825    159.9718     110.5008     129.1719     136.7656
+    149.42365    114.73985    129.0225     137.11035]
+length of file: 150
+Thu Dec 20 13:48:56 CST 2012
+
+
+PS:
+
+Read file <log.lsf.err> for stderr output of this job.
+

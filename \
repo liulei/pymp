@@ -1,0 +1,106 @@
+from numpy import *
+import numpy as np
+from mp import *
+from matplotlib import *
+from matplotlib import ticker
+import matplotlib.pyplot as plt
+from math import *
+import sys
+
+def calc_r_z(r, m, mz, nbin, rad):
+
+    n = len(r)
+
+    dr = rad / nbin
+    drh = dr / 2.0
+    rb = np.arange(nbin, dtype = float)
+    rb = (rb + 0.5) * dr
+
+    marr = np.arange(nbin, dtype = float)
+    mzarr = np.arange(nbin, dtype = float)
+
+    count = np.arange(nbin)
+
+    for i in range(0, n):
+
+        rr = r[i]
+
+        for j in range(0, nbin):
+
+            if rb[j] - drh < rr and rb[j] + drh >= rr:
+                
+                marr[j] += m[i]
+                mzarr[j] += mz[i]
+                count[j] += 1
+
+    zb = np.log10(mzarr / (marr * 0.75) / 14.0) + 12.0 - 7.86
+    return rb, zb
+
+
+if len(sys.argv) < 4
+    print 'rn.py: not enough parameter!'
+    print '\tUsage: rn.py dir_name snap_num range'
+    print '\tExample: rn.py PKc-1 0001 5'
+
+dir_name = sys.argv[1]
+snap_num = sys.argv[2]
+rsize = float(sys.argv[3])
+
+ntot = 0
+ntot, arr = read_single(prefix, dir_name, snap_num)
+
+rc('font', size = 20)
+
+Z = array['mass_Z'][:]
+mass = array['mass'][:]
+idw = np.where(arr['type'] == TYPE_WARM)
+idc = np.where(arr['type'] == TYPE_COLD)
+ids = np.where(arr['type'] == TYPE_STAR_SINGLE)
+
+r = arr['pos'][:, 0] * arr['pos'][:, 0] + arr['pos'][:, 1] * arr['pos'][:, 1]
+    + arr['pos'][:, 2] * arr['pos'][:, 2]  
+
+nbin = 25
+rad = rsize + 1.0
+
+rwb = np.zeros(nbin)
+rcb = np.zeros(nbin)
+rsb = np.zeros(nbin)
+
+zwb = np.zeros(nbin)
+zcb = np.zeros(nbin)
+zsb = np.zeros(nbin)
+
+rw = r[ids]
+rc = r[idc]
+rs = r[ids]
+
+mw = mass[idw]
+mc = mass[idc]
+ms = mass[ids]
+
+zw = mass_Z[idw, ID_N]
+zc = mass_Z[idc, ID_N]
+zs = mass_Z[ids, ID_N]
+
+rwb, zwb = calc_r_z(rw, mw, zw, nbin, rad)
+rcb, zcb = calc_r_z(rc, mc, zc, nbin, rad)
+rsb, zsb = calc_r_z(rs, ms, zs, nbin, rad)
+
+zw = np.log10(zw / (mw * 0.75) / 14.0) + 12.0 - 7.86
+zc = np.log10(zc / (mc * 0.75) / 14.0) + 12.0 - 7.86
+zs = np.log10(zs / (ms * 0.75) / 14.0) + 12.0 - 7.86
+
+plt.xlabel('Radius [kpc]')
+plt.ylabel('Nitrogen abundance [N/H]')
+
+plt.plot(rwb, zwb, 'r-')
+plt.plot(rcb, zcb, 'g-')
+plt.plot(rsb, zsb, 'b-')
+
+plt.xlim(0, rsize)
+plt.ylim(-8.0, 0.0)
+
+figure_name = 'r-Nitrogen-' + dir_name + '-' + file_num + '.eps'
+plt.savefig(figure_name)
+

@@ -1,0 +1,25 @@
+#!/bin/sh
+
+#BSUB -J gen
+#BSUB -q cpu_test
+#BSUB -a openmpi-qlc
+#BSUB -R 'select[type==any] span[ptile=1] rusage[ngpus=1]'
+#BSUB -o log.lsf.out
+#BSUB -e log.lsf.err
+#BSUB -n 1
+
+date
+
+dir_name=MW-hd-2
+base_name=MW
+nproc=8
+radius=50.0
+
+echo 'density ...'
+./fourPanelD.py $dir_name $base_name $nproc $radius > log.out
+echo 'cloud mass ...'
+./fourPanelMc.py $dir_name $base_name $nproc $radius > log.out
+echo 'temperature ...'
+./fourPanelT.py $dir_name $base_name $nproc $radius > log.out
+
+date

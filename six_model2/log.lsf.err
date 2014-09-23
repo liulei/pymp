@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "./DPanel.py", line 642, in <module>
+    multi_den(snap_num, size)
+  File "./DPanel.py", line 128, in multi_den
+    ntot, time, rarr = mp.read_snap_paral(mp.prefix, dir[2], base_name, snap_name, proc_num[2])
+  File "/export/home/liulei/program/mp-cd-sph/python/mp.py", line 401, in read_snap_paral
+    f = open(file_name, 'r')
+IOError: [Errno 2] No such file or directory: '/export/home/liulei/program/mp-cd-sph/run/101-hd-3Hs2/out/dwarf_0200SNAP8-0'
+Traceback (most recent call last):
+  File "./McPanel.py", line 635, in <module>
+    multi_Mc(snap_num, size)
+  File "./McPanel.py", line 131, in multi_Mc
+    ntot, time, rarr = mp.read_snap_paral(mp.prefix, dir[2], base_name, snap_name, proc_num[2])
+  File "/export/home/liulei/program/mp-cd-sph/python/mp.py", line 401, in read_snap_paral
+    f = open(file_name, 'r')
+IOError: [Errno 2] No such file or directory: '/export/home/liulei/program/mp-cd-sph/run/101-hd-3Hs2/out/dwarf_0200SNAP8-0'
+Traceback (most recent call last):
+  File "./histPanel.py", line 193, in <module>
+    multi_hist(snap_num)
+  File "./histPanel.py", line 137, in multi_hist
+    ntot, time, arr = mp.read_snap_paral(mp.prefix, dir[4], base_name, snap_name, 8)
+  File "/export/home/liulei/program/mp-cd-sph/python/mp.py", line 401, in read_snap_paral
+    f = open(file_name, 'r')
+IOError: [Errno 2] No such file or directory: '/export/home/liulei/program/mp-cd-sph/run/101-hd-3Hs2/out/dwarf_0200SNAP8-0'
